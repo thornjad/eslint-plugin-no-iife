@@ -3,8 +3,8 @@
 An [eslint](http://eslint.org/) plugin to prevent immediately-invoked function
 expression (IIFE) usage in your code.
 
-[![pipeline status](https://gitlab.com/thornjad/eslint-plugin-no-iife/badges/master/pipeline.svg)](https://gitlab.com/thornjad/eslint-plugin-no-iife/commits/master)
-[![npm](https://img.shields.io/npm/v/eslint-plugin-no-iife.svg)](https://www.npmjs.com/package/eslint-plugin-no-iife)
+[![pipeline status](https://gitlab.com/thornjad/eslint-plugin-no-iife/badges/master/pipeline.svg?style=flat-square)](https://gitlab.com/thornjad/eslint-plugin-no-iife/commits/master)
+[![npm](https://img.shields.io/npm/v/eslint-plugin-no-iife.svg?style=flat-square)](https://www.npmjs.com/package/eslint-plugin-no-iife)
 [![license](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://gitlab.com/thornjad/eslint-plugin-no-iife/blob/master/LICENSE)
 
 ## Installation
