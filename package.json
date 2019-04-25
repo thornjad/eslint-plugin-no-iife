@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://gitlab.com/thornjad/eslint-plugin-no-iife/issues"
   },
-  "homepage": "https://gitlab.com/thornjad/eslint-plugin-no-iife#readme"
+  "homepage": "https://gitlab.com/thornjad/eslint-plugin-no-iife#readme",
+  "peerDependencies": {
+    "eslint": ">=5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
