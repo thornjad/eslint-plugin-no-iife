@@ -35,11 +35,11 @@ This rule prevents all immediately-invoked function expressions.
 ## Why
 
 Immediately-invoked function expressions are a messy remnant of early
-Javascript, and their use today only serves to decrease readability. Their use
-can and should be entirely replaced with minimal thought.
+Javascript, and their use today only serves to decrease readability. They can
+and should be entirely replaced with modern syntax.
 
-Historically, IIFEs had two main advantages. First, it served as a shorthand for
-calling a function which was just defined. While this pattern can lead to
+Historically, the IIFE had two main advantages. First, it served as a shorthand
+for calling a function which was just defined. While this pattern can lead to
 convoluted code, there are a handful of legitimate reasons to call code
 immediately after definition, such as factory functions. However, it is much
 more human-readable to define a function and then call it in the next statement.
@@ -64,12 +64,12 @@ const y = function() {
 const x = y();
 ```
 
-The other use case for IIFEs was much more practical; imposing a limited scope.
-In a normal script, `var` hoists to the top of the function scope. In a
-top-level script, the function scope is global, making all the variables global.
-And since `var` variables can be reassigned with another use of `var`, it's all
-too easy to override existing globals. Besides, having so many global variables
-makes debugging far more difficult.
+The other use-case for IIFEs was much more practical; imposing a limited scope.
+The problem arises from `var`, which hoists variables to the top of the function
+scope. In a top-level script, the function scope is global, making all the
+variables global. And since `var` variables can be reassigned with another use
+of `var`, it's all too easy to override existing globals. Besides, having so
+many global variables makes debugging far more difficult.
 
 IIFEs solve this problem by wrapping a script in an anonymous function, limiting
 the scope to just one page (or less). This was a savior for many common
@@ -78,17 +78,6 @@ problems, but at the cost of being messy and confusing.
 In modern Javascript, however, `var` is rarely used, and so the problem of
 global variable pollution has entirely disappeared. By using `const` and `let`,
 there is simply no need for IIFEs anymore.
-
-## Disabling the rule
-
-Really, _really_ need to use an IIFE? Your call:
-
-```javascript
-// eslint-disable-next-line no-iife/no-iife
-(function() {
-  // ...
-})()
-```
 
 ## License
 
