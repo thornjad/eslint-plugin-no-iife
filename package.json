@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-no-iife",
+  "version": "0.9.0",
+  "description": "Prevents IIFE usage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/thornjad/eslint-plugin-no-iife.git"
+  },
+  "keywords": [
+    "eslint",
+    "plugin"
+  ],
+  "author": "Jade Michael Thornton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/thornjad/eslint-plugin-no-iife/issues"
+  },
+  "homepage": "https://gitlab.com/thornjad/eslint-plugin-no-iife#readme"
+}
