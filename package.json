@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-iife",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Prevents IIFE usage",
   "main": "index.js",
   "directories": {
