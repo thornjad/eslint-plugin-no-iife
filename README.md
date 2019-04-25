@@ -19,12 +19,12 @@ In your `.eslintrc` (or wherever your eslint configuration lives):
 
 ```json
 {
-	"plugins": [
-		"no-iife"
-	],
-	"rules": {
-		"no-iife/no-iife": "error"
-	}
+  "plugins": [
+    "no-iife"
+  ],
+  "rules": {
+    "no-iife/no-iife": "error"
+  }
 }
 ```
 
@@ -47,9 +47,9 @@ Compare this IIFE:
 
 ```javascript
 const x = (function() {
-	return function() {
-		foo();
-	}
+  return function() {
+    foo();
+  }
 })();
 ```
 
@@ -57,9 +57,9 @@ With this version:
 
 ```javascript
 const y = function() {
-	return function() {
-		foo();
-	}
+  return function() {
+    foo();
+  }
 };
 const x = y();
 ```
@@ -86,7 +86,7 @@ Really, _really_ need to use an IIFE? Your call:
 ```javascript
 // eslint-disable-next-line no-iife/no-iife
 (function() {
-	// ...
+  // ...
 })()
 ```
 
